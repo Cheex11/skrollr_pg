@@ -57,20 +57,16 @@ textarea {
 }
 
 
-/* ===== Parallax Master Class ==============================================
-   Author: Petr Tichy - ihatetomatoes.net
-   ========================================================================== */
-
 body {
     font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
     /*background-color: black;*/
-    background: #111;
 }
 
 .wrapper {
     width: 90%;
     margin: 0 auto;
     max-width: 1140px;
+    height: 500px;
 }
 
 /* =General */
@@ -111,6 +107,23 @@ header {
 
 /* =Profiles */
 main { }
+
+    .long_product_holder {
+        color: blue;
+        height: 1200px;
+    }
+
+    #product_show {
+        float:left;
+        width: 40%;
+        text-align: center;
+    }
+    #product_text {
+        float:left;
+        width: 60%;
+        text-align: center;
+    }
+
     #profiles {
         margin-top: 200px;
         background: url('../img/airplane.jpg') repeat-y top center;
@@ -171,55 +184,6 @@ main { }
         background-size: 128px 141px;
     }
 
-/* =Boxing Ring */
-#boxingRing {
-    background-color: #e7e7e7;
-    position: relative;
-    overflow: hidden;
-    z-index: -1;
-}
-    #stage {
-        width: 300px;
-        height: 273px;
-        background: url('../img/bcg_ring.png') no-repeat top right;
-        background-size: 300px 273px;
-        position: absolute;
-        top: 35px;
-        left: 50%;
-        margin-left: -150px;
-    }
-    .boxerTop {
-        width: 60px;
-        height: 51px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -117px 0 0 -84px;
-        z-index: 1;
-    }
-        .boxerTopA {
-            background: url('../img/img_boxerA-top.png') no-repeat 0 0;
-            background-size: 60px 51px;
-        }
-        .boxerTopB {
-            background: url('../img/img_boxerB-top.png') no-repeat 0 0;
-            background-size: 60px 51px;
-            margin: 24px 0 0 30px;
-        }
-    .indicator,
-    #round1,
-    #round2 {
-        display: none;
-    }
-    .winnersText {
-        margin: 350px -6% 0 -6%;
-        color: #fff;
-        background-color: rgba(31,31,31,1);
-        padding: 20px;
-    }
-        .winnersText h2 {
-            color: #f3cc11;
-        }
 #bright_logo {
     margin-top: -400px;
     height: 400px;

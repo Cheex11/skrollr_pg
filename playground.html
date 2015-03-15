@@ -6,8 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Data Attributes 101</title>
-        <meta name="description" content="">
+        <title>Fit to Print- Final</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/normalize.min.css">
@@ -19,18 +18,45 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
+        <div id="skrollr-body">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="offset"></div>
-
-
-        <header data-top="opacity: 1" data--400-top="opacity: 0">
+<!--         <div id="fixedElement"
+            data-top='transform: translateY(0%); opacity: 1'
+            data--5p-top='transform: translateY(200%);opacity: 0'
+        >Hello, welcome to</div> -->
+    <div data--400-top="opacity: 0" data-top="opacity: 1">
+        <header>
             <div class="wrapper clearfix">
 
+                <div id='bright_logo'>
+                </div>
+
+                <p>
+                    Scroll down to see what we can offer!
+                </p>
             </div>
         </header>
+    </div>
+
+
+
+        <main>
+            <div class='long_product_holder'>
+
+
+            </div>
+
+
+        </main><!-- /main -->
+
+        <footer>
+            <div class="wrapper clearfix">
+                <p>Stuff will go here</p>
+            </div>
+        </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
@@ -38,16 +64,13 @@
         <script type="text/javascript" src="js/skrollr.min.js"></script>
         <script type="text/javascript">
         var s = skrollr.init({
-            render: function(data) {
-                //Log the current scroll position.
-                //console.log(data.curTop);
-                $('#offset').text(data.curTop);
-            }
+            forceHeight: false
         });
         </script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
+        </div>
     </body>
 </html>
